@@ -122,7 +122,6 @@
   <section aria-labelledby="members-title">
     <h2 id="members-title">팀원</h2>
     <p id="summary"></p>
-    <p class="note">지금 보이는 이름과 소속, 한 줄 소개는 자리를 잡아 둔 예시입니다. 실제 팀원 정보로 바꿔 넣으면 됩니다.</p>
     <ul class="members" id="members"></ul>
   </section>
 </main>
@@ -131,12 +130,12 @@
   // 팀원 명단: 이 배열만 고치면 화면이 그대로 따라옵니다.
   // name = 이름, org = 소속, desc = 한 줄 소개
   const MEMBERS = [
-    { name: "홍길동", org: "전기공학과",   desc: "한 줄 소개가 들어가는 자리" },
-    { name: "김철수", org: "전기공학과",   desc: "한 줄 소개가 들어가는 자리" },
-    { name: "이영희", org: "컴퓨터공학과", desc: "한 줄 소개가 들어가는 자리" },
-    { name: "박민수", org: "기계공학과",   desc: "한 줄 소개가 들어가는 자리" }
+    { name: "황현성", org: "컴퓨터인공지능학부", desc: "팀장입니다!" },
+    { name: "안성우", org: "컴퓨터인공지능학부", desc: "팀원입니다!" },
+    { name: "조대권", org: "컴퓨터인공지능학부", desc: "팀원입니다!" },
+    { name: "이정우", org: "컴퓨터인공지능학부", desc: "팀원입니다!" }
   ];
-  const IS_EXAMPLE = true; // 실제 팀원 정보를 넣은 뒤 false로 바꾸면 '예시' 표시가 사라집니다.
+  const IS_EXAMPLE = false; // 실제 팀원 정보를 넣은 뒤 false로 바꾸면 '예시' 표시가 사라집니다.
 
   function el(tag, className, text) {
     const node = document.createElement(tag);
